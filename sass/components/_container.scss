@@ -1,17 +1,24 @@
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-
-    .projects-nav &,
-    .portfolio-nav &,
-    .features & {
-        width: 1200px;
-    }
-
-    .headerh2-pictures & {
-        width: 1200px;
-        margin-top: 94px;
-    }
+.container{
+    max-width: 480px;
+    padding:0 15px;
+    margin:0 auto;
+    align-items: center;
 }
+
+// .container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     padding: 0 15px;
+
+//     .projects-nav &,
+//     .portfolio-nav &,
+//     .features & {
+//         width: 1200px;
+//     }
+
+//     .headerh2-pictures & {
+//         width: 1200px;
+//         margin-top: 94px;
+//     }
+// }
 
