@@ -1,48 +1,48 @@
-.features {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin-top: 94px;
+// .features {
+//     display: flex;
+//     justify-content: center;
+//     list-style: none;
+//     margin-top: 94px;
 
-    &__item {
-        width: 270px;
-        height: 120px;
-        background-color: var(--team-background-color);
-        border-radius: 4px;
-        align-items: center;
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
-    }
+//     &__item {
+//         width: 270px;
+//         height: 120px;
+//         background-color: var(--team-background-color);
+//         border-radius: 4px;
+//         align-items: center;
+//             &:not(:last-child) {
+//                 margin-right: 30px;
+//             }
+//     }
 
-    &__icon {
-        align-items: center;
-        margin: 25px 100px 25px 100px;
-    }
+//     &__icon {
+//         align-items: center;
+//         margin: 25px 100px 25px 100px;
+//     }
 
-    &__title {
-        font-weight: 700;
-        line-height: 1.142;
-        text-transform: uppercase;
-        color: var(--main-color);
-        width: 270;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        margin-top: 30px;
-    }
+//     &__title {
+//         font-weight: 700;
+//         line-height: 1.142;
+//         text-transform: uppercase;
+//         color: var(--main-color);
+//         width: 270;
+//         font-size: 14px;
+//         letter-spacing: 0.03em;
+//         margin-top: 30px;
+//     }
 
-    &__description {
-        line-height: 1.714;
-        color:var(--gray-color);
-        margin-top: 10px;
-        margin-bottom: 0;
-        text-transform: none;
-        font-size: 14px;
-        letter-spacing: 0.03em;
-        font-weight: 400;
-        width: 270px;
-    }
-}
+//     &__description {
+//         line-height: 1.714;
+//         color:var(--gray-color);
+//         margin-top: 10px;
+//         margin-bottom: 0;
+//         text-transform: none;
+//         font-size: 14px;
+//         letter-spacing: 0.03em;
+//         font-weight: 400;
+//         width: 270px;
+//     }
+// }
 
 
 
