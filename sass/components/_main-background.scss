@@ -1,0 +1,24 @@
+.backgroundsection {
+    background-color: var(--background-color);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url("../images/backgroundresized.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        padding-top: 200px;
+        padding-bottom: 200px;
+}
+
+.background__header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    width:696px;
+    padding-bottom:30px;
+}
