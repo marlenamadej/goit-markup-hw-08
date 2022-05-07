@@ -1,28 +1,119 @@
+@media screen and (min-width:320px) and (max-width:767px){
+    .backgroundsection{
+        background-color: var(--background-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url("../images/header_mobile.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-size: 480px 400px;
+        display:flex;
+        padding-top:118px;
+        padding-bottom:118px;
+    }
+    
+    .background__header {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-left:auto;
+        margin-right:auto;
+        width:400px;
+        color:var(--white-color);
+        margin-bottom:0;
+        margin-top:0;
+        padding-bottom:30px;
+        }
+}
 
+@media screen and (min-device-pixel-ratio:2) and (min-width: 320px) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (min-width: 320px) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+        .backgroundsection{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/header_mobile@2x.jpg");
+        }
+    }
 
+@media screen and (min-width:768px) and (max-width:1199px){
+    .backgroundsection{
+        background-color: var(--background-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url("../images/header_tablet.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        display:flex;
+        padding-top:118px;
+        padding-bottom:118px;
+    }
+    
+    .background__header {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-left:auto;
+        margin-right:auto;
+        width:400px;
+        color:var(--white-color);
+        margin-bottom:0;
+        margin-top:0;
+        padding-bottom:30px;
+        }
+}
 
+@media screen and (min-device-pixel-ratio:2) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+        .backgroundsection{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/header_tablet@2x.jpg");
+        }
+    }
 
-.backgroundsection {
-    background-color: var(--background-color);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/backgroundresized.jpg");
+@media screen and (min-width:1200px){
+    .backgroundsection {
+        background-color: var(--background-color);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/header_desktop.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
         padding-top: 200px;
         padding-bottom: 200px;
+    }
+    
+    .background__header {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.363;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-right: auto;
+        width:696px;
+        color:var(--white-color);
+        padding-bottom:30px;
+    }
 }
 
-.background__header {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.363;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-left: auto;
-    margin-right: auto;
-    width:696px;
-    padding-bottom:30px;
-}
+@media screen and (min-device-pixel-ratio:2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+        .backgroundsection{
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url("../images/header_desktop@2x.jpg");
+        }
+    }
+
