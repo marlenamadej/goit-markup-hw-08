@@ -1,5 +1,135 @@
-.teamsection {
+@media screen and (min-width:320px) and (max-width:767px) {
+    .teamsection {
+        background-color: var(--team-background-color);
+        padding-top:60px;
+        padding-bottom:60px;
+    }
+
+    .team {
+        justify-content: center;
+        list-style: none;
+        &__header {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 1.178;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--main-color);
+            padding-bottom:30px;
+            }
+            
+                &__item{
+                    &:not(:first-child) {
+                        flex-basis: calc(100%/4-30px);
+                    }
+                }
+            
+                &__card {
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                        0px 1px 1px rgba(0, 0, 0, 0.14),
+                        0px 2px 1px rgba(0, 0, 0, 0.2);
+                    border-radius: 0px 0px 4px 4px;
+                    margin: 0;
+                    background-color: var(--white-color);
+                    justify-content: center;
+                    margin-bottom:30px;
+                    padding-bottom:24px;
+                }
+                
+                &__name {
+                    font-size: 16px;
+                    line-height: 1.171;
+                    letter-spacing: 0.03em;
+                    font-weight: 500;
+                    color: var(--main-color);
+                    text-align: center;
+                    margin: 0;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                }
+                
+                &__position {
+                    font-size: 16px;
+                    line-height: 1.171;
+                    letter-spacing: 0.03em;
+                    font-weight: 400;
+                    color: var(--gray-color);
+                    text-align: center;
+                    margin: 0;
+                    padding-bottom: 16px;
+                }
+            }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .teamsection {
     background-color: var(--team-background-color);
+    padding-top:60px;
+    padding-bottom:60px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+        padding-bottom:30px;
+    }
+
+    &__item{
+            margin-left: 30px;
+            flex-basis: calc(100%/2-30px);
+        }
+
+    &__card {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        margin: 0;
+        background-color: var(--white-color);
+        justify-content: center;
+        margin-bottom:30px;
+        padding-bottom:24px;
+    }
+    
+    &__name {
+        font-size: 16px;
+        line-height: 1.171;
+        letter-spacing: 0.03em;
+        font-weight: 500;
+        color: var(--main-color);
+        text-align: center;
+        margin: 0;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    
+    &__position {
+        font-size: 16px;
+        line-height: 1.171;
+        letter-spacing: 0.03em;
+        font-weight: 400;
+        color: var(--gray-color);
+        text-align: center;
+        margin: 0;
+        padding-bottom: 16px;
+    }
+}
+}
+
+@media screen and (min-width:1200px) {
+    .teamsection {
+    background-color: var(--team-background-color);
+    padding-top:60px;
 }
 
 .team {
@@ -14,8 +144,6 @@
         line-height: 1.166;
         text-align: center;
         letter-spacing: 0.03em;
-        color: var(--main-color);
-        margin-top: 94px;
         margin-bottom: 50px;
     }
 
@@ -60,6 +188,8 @@
         padding-bottom: 16px;
     }
 }
+}
+
 
 
 
