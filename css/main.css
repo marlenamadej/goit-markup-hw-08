@@ -94,23 +94,6 @@ img {
   }
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.projects-nav .container,
-.portfolio-nav .container,
-.features .container {
-  width: 1200px;
-}
-
-.headerh2-pictures .container {
-  width: 1200px;
-  margin-top: 94px;
-}
-
 .nav {
   display: flex;
 }
@@ -855,6 +838,8 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
+    margin-left: -30px;
+    margin-top: -30px;
   }
   .team__header {
     font-weight: 700;
@@ -867,6 +852,7 @@ img {
   }
   .team__item {
     margin-left: 30px;
+    margin-top: 30px;
     flex-basis: calc(100%/2-30px);
   }
   .team__card {
@@ -875,8 +861,8 @@ img {
     margin: 0;
     background-color: var(--white-color);
     justify-content: center;
-    margin-bottom: 30px;
-    padding-bottom: 24px;
+    width: 354px;
+    height: 536px;
   }
   .team__name {
     font-size: 16px;
@@ -1030,6 +1016,47 @@ img {
   .customers__link {
     display: flex;
     width: 226px;
+    height: 92px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--social-color);
+    box-sizing: border-box;
+    fill: var(--social-color);
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .customers__link:hover, .customers__link:focus {
+    fill: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
+  .customers__header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 30px;
+  }
+  .customers__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .customers__link {
+    display: flex;
+    width: 170px;
     height: 92px;
     border-radius: 4px;
     align-items: center;
