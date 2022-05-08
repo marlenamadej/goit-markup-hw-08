@@ -98,47 +98,49 @@
 }
 }
 
+@media screen and (min-width:1200px) {
+    .customers {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60px;
 
-// .customers {
-//     display: flex;
-//     flex-wrap: nowrap;
-//     list-style: none;
-//     align-items: center;
-//     justify-content: center;
-//     padding-bottom: 94px;
+        &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.166;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+        margin-bottom: 30px;
+        }
 
-//     &__header {
-//         font-weight: 700;
-//         font-size: 36px;
-//         line-height: 1.166;
-//         text-align: center;
-//         letter-spacing: 0.03em;
-//         color: var(--main-color);
-//         margin-top: 94px;
-//         margin-bottom: 50px;
-//     }
-
-//     &__item{
-//         &:not(:last-child) {
-//             margin-right: 30px;
-//         }
-//     }
+        &__item{
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        }
     
-//     &__link {
-//         display: flex;
-//         width: 170px;
-//         height: 92px;
-//         border-radius: 4px;
-//         align-items: center;
-//         justify-content: center;
-//         border: 1px solid var(--social-color);
-//         box-sizing: border-box;
-//         fill: var(--social-color);
-//         transition-property: fill, border;
-//         transition-duration: 250ms;
-//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-//             &:hover,
-//             &:focus{
-//             fill: var(--secondary-color);
-//             border: 1px solid var(--secondary-color);
-//        }
+        &__link {
+        display: flex;
+        width: 170px;
+        height: 92px;
+        border-radius: 4px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--social-color);
+        box-sizing: border-box;
+        fill: var(--social-color);
+        transition-property: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus{
+            fill: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+            }
+        }
+    }
+}
