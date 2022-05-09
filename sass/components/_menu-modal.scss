@@ -2,7 +2,6 @@
     .menu-modal{
         position:fixed;
         top:0%;
-
         width:480px;
         height:796px;
         background-color:var(--white-color);
@@ -21,8 +20,6 @@
         right:8px;
         width: 30px;
         height: 30px;
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: var(--white-color);
         fill:var(--close-color);
         cursor: pointer;
@@ -42,7 +39,7 @@
         font-size: 40px;
         line-height:1.175;
         letter-spacing: 0.02em;
-        color: var(--main-color);
+        
         &:last-child{
             margin-bottom:302px;
         }
@@ -50,6 +47,7 @@
 
     .menu-mobile__link{
         text-decoration: none;
+        color: var(--main-color);
         margin-left:40px;
         transition-property: color;
         transition-duration: 250ms;
@@ -93,13 +91,13 @@
             &:focus{
                 color: var(--secondary-color);
             }
-        }
     }
 
     .menu-social{
         display:flex;
         margin-left:40px;
         text-decoration: none;
+        border-right:1px solid rgba(33, 33, 33, 0.2);
     }
 
     .menu-social__item{
