@@ -1170,9 +1170,21 @@ img {
     color: var(--gray-color);
     margin-left: 40px;
   }
+  .menu-contact__linkhover {
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-contact__linkhover:hover, .menu-contact__linkhover:focus {
+    color: var(--secondary-color);
+    fill: var(--secondary-color);
+  }
   .menu-social {
     display: flex;
     margin-left: 40px;
+    text-decoration: none;
+  }
+  .menu-social__item {
     text-decoration: none;
   }
   .menu-social__link {
