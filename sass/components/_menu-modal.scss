@@ -42,6 +42,7 @@
         font-size: 40px;
         line-height:1.175;
         letter-spacing: 0.02em;
+        color: var(--main-color);
         &:last-child{
             margin-bottom:302px;
         }
@@ -49,16 +50,18 @@
 
     .menu-mobile__link{
         text-decoration: none;
-        color: var(--main-color);
         margin-left:40px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus{
+                color: var(--secondary-color);
+            }
     }
 
     .menu-contact{
         margin-bottom:32px;
-    }
-
-    .menu-contact__item{
-
     }
 
     .menu-contact__item--phone {
@@ -83,11 +86,23 @@
         text-decoration: none;
         color: var(--gray-color);
         margin-left:40px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus{
+                color: var(--secondary-color);
+            }
+        }
     }
 
     .menu-social{
         display:flex;
         margin-left:40px;
+        text-decoration: none;
+    }
+
+    .menu-social__item{
         text-decoration: none;
     }
 
