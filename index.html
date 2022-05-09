@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
 </head>
 
@@ -111,19 +110,31 @@
                 <ul class="offer">
                     <li class="offer__item">
                         <div class="thumb">
-                            <img src="images/img1resized.jpg" alt="computer" width="370" height="294" />
+                            <img src="images/img1resized.jpg" 
+                                srcset="img1@1x.jpg 1x, img1@2x.jpg 1x"
+                                alt="computer" 
+                                width="370" 
+                                height="294" />
                             <p class="label">APLIKACJE KOMPUTEROWE</p>
                         </div>
                     </li>
                     <li class="offer__item">
                         <div class="thumb">
-                            <img src="images/img2resized.jpg" alt="phone" width="370" height="294" />
+                            <img src="images/img2resized.jpg" 
+                                srcset="img2@1x.jpg 1x, img2@2x.jpg 1x"
+                                alt="phone" 
+                                width="370" 
+                                height="294" />
                             <p class="label">APLIKACJE MOBILNE</p>
                         </div>
                     </li>
                     <li class="offer__item">
                         <div class="thumb">
-                            <img src="images/img3resized.jpg" alt="tablet" width="370" height="294" />
+                            <img src="images/img3resized.jpg"
+                                srcset="img3@1x.jpg 1x, img3@2x.jpg 1x" 
+                                alt="tablet" 
+                                width="370" 
+                                height="294" />
                             <p class="label">ROZWIĄZANIA GRAFICZNE</p>
                         </div>
                         
@@ -476,7 +487,7 @@
 
     <div class="backdrop-menu is-hidden" data-menu>
         <div class="menu-modal">
-            <button type="button" class="close-btn" data-menu-close>
+            <button type="button" class="menu-close-btn" data-menu-close>
                 <svg width="18" height="18">
                     <use href="images/icons.svg#icon-close"></use>
                 </svg>
@@ -516,7 +527,7 @@
             </ul>
         </div>
     </div>
-    <script src="./js/menu.js"></script>
+    <script src="./js/moile-menu.js"></script>
     
 
 </body>
