@@ -17,6 +17,7 @@
                 background-color: var(--team-background-color);
                 border-radius: 4px;
                 align-items: center;
+                justify-content: center;
                 margin-bottom:136px;
                 padding-bottom:30px;
             }
@@ -31,14 +32,14 @@
                 line-height: 1.142;
                 text-transform: uppercase;
                 color: var(--main-color);
-                width: 270px;
+                width: 450px;
                 font-size: 14px;
                 letter-spacing: 0.03em;
                 margin-top: 30px;
                 align-items: center;
                 justify-content: center;
-                margin-left:105px;
-                margin-right:105px;
+                margin-left:175px;
+                margin-right:175px;
             }
         
             &__description {
@@ -58,14 +59,73 @@
         }    
 }
 
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .featuressection {
+        display: flex;
+        padding-top:60px;
+    }
+    
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
+        list-style: none;
+        margin-top: 94px;
+        margin-left: -30px;
+        margin-top: -0px;
+        
+            &__item {
+                width: 354px;
+                height: 120px;
+                background-color: var(--team-background-color);
+                border-radius: 4px;
+                align-items: center;
+                margin-left: 30px;
+                margin-top: 0px;
+                margin-bottom:160px;
+                flex-basis: calc(100%/2-30px);
+            }
+        
+            &__icon {
+                align-items: center;
+                margin: 25px 144.34px 25px 144.34px;
+            }
+        
+            &__title {
+                font-weight: 700;
+                line-height: 1.142;
+                text-transform: uppercase;
+                color: var(--main-color);
+                width: 270;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                margin-top: 30px;
+            }
+        
+            &__description {
+                line-height: 1.714;
+                color:var(--gray-color);
+                margin-top: 10px;
+                margin-bottom: 0;
+                text-transform: none;
+                font-size: 14px;
+                letter-spacing: 0.03em;
+                font-weight: 400;
+                width: 270px;
+            }
+        }    
+    
+    
+}
 
 @media screen and (min-width:1200px){
     .featuressection {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        margin-left: -30px;
-        margin-top: -30px;
         align-items: center;
         justify-content: center;
         padding-bottom:60px;
