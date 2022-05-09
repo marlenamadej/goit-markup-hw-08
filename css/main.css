@@ -582,9 +582,10 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .modal {
     position: relative;
-    top: 93px;
-    left: 15px;
+    top: 50%;
+    left: 50%;
     width: 450px;
+    transform: translate(-50%, -50%);
     min-height: 609px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -640,7 +641,7 @@ img {
     margin-top: 4px;
   }
   .modalform__input {
-    width: 100%;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -665,7 +666,7 @@ img {
   }
   .modalform__textarea {
     outline: none;
-    width: 100%;
+    width: 370px;
     height: 120px;
     padding: 12px 16px;
     margin-top: 4px;
@@ -808,7 +809,7 @@ img {
     margin-top: 4px;
   }
   .modalform__input {
-    width: 100%;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -833,10 +834,11 @@ img {
   }
   .modalform__textarea {
     outline: none;
-    width: 100%;
+    width: 370px;
     height: 120px;
     padding: 12px 16px;
     margin-top: 4px;
+    margin-bottom: 20px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
@@ -1101,6 +1103,7 @@ img {
     background-color: var(--team-background-color);
     border-radius: 4px;
     align-items: center;
+    justify-content: center;
     margin-bottom: 136px;
     padding-bottom: 30px;
   }
@@ -1113,14 +1116,14 @@ img {
     line-height: 1.142;
     text-transform: uppercase;
     color: var(--main-color);
-    width: 270px;
+    width: 450px;
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-top: 30px;
     align-items: center;
     justify-content: center;
-    margin-left: 105px;
-    margin-right: 105px;
+    margin-left: 175px;
+    margin-right: 175px;
   }
   .features__description {
     line-height: 1.714;
@@ -1137,13 +1140,66 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .featuressection {
+    display: flex;
+    padding-top: 60px;
+  }
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 94px;
+    margin-left: -30px;
+    margin-top: -0px;
+  }
+  .features__item {
+    width: 354px;
+    height: 120px;
+    background-color: var(--team-background-color);
+    border-radius: 4px;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 160px;
+    flex-basis: calc(100%/2-30px);
+  }
+  .features__icon {
+    align-items: center;
+    margin: 25px 144.34px 25px 144.34px;
+  }
+  .features__title {
+    font-weight: 700;
+    line-height: 1.142;
+    text-transform: uppercase;
+    color: var(--main-color);
+    width: 270;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+  }
+  .features__description {
+    line-height: 1.714;
+    color: var(--gray-color);
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    width: 270px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .featuressection {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    margin-left: -30px;
-    margin-top: -30px;
     align-items: center;
     justify-content: center;
     padding-bottom: 60px;
