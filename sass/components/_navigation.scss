@@ -11,7 +11,13 @@
         list-style: none;
         margin-left: auto;
         height:60px
-}
+    }
+
+    .menu-open{
+        display:flex;
+        margin-left:auto;
+        margin-right:22px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:1199px) {
@@ -106,6 +112,10 @@
             fill: var(--secondary-color);
         }
 }
+
+.menu-open{
+    display:none;
+}
 }
 
 @media screen and (min-width:1200px) {
@@ -188,6 +198,10 @@
             color: var(--secondary-color);
             fill: var(--secondary-color);
         }
+}
+
+.menu-open{
+    display:none;
 }
 }
 
