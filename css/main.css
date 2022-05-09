@@ -1119,8 +1119,6 @@ img {
     right: 8px;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
     fill: var(--close-color);
     cursor: pointer;
@@ -1145,6 +1143,12 @@ img {
     text-decoration: none;
     color: var(--main-color);
     margin-left: 40px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-mobile__link:hover, .menu-mobile__link:focus {
+    color: var(--secondary-color);
   }
   .menu-contact {
     margin-bottom: 32px;
@@ -1169,20 +1173,18 @@ img {
     text-decoration: none;
     color: var(--gray-color);
     margin-left: 40px;
-  }
-  .menu-contact__linkhover {
-    transition-property: color, fill;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .menu-contact__linkhover:hover, .menu-contact__linkhover:focus {
+  .menu-contact__link:hover, .menu-contact__link:focus {
     color: var(--secondary-color);
-    fill: var(--secondary-color);
   }
   .menu-social {
     display: flex;
     margin-left: 40px;
     text-decoration: none;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
   .menu-social__item {
     text-decoration: none;
