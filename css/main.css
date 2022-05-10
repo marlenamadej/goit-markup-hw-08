@@ -110,7 +110,20 @@ img {
   .menu-open {
     display: flex;
     margin-left: auto;
-    margin-right: 22px;
+    margin-right: 8px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+    background: none;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-open:hover, .menu-open:focus {
+    fill: var(--secondary-color);
+    cursor: pointer;
   }
 }
 
@@ -122,7 +135,7 @@ img {
     display: flex;
     align-items: center;
     list-style: none;
-    margin-left: auto;
+    margin-left: 83px;
   }
   .navigation__item {
     padding-top: 32px;
@@ -161,13 +174,10 @@ img {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-left: -10px;
-    margin-top: -10px;
   }
   .contact__item {
-    margin-left: 10px;
+    margin-left: 101px;
     margin-top: 10px;
-    flex-basis: calc(100% / 2 - 10px);
   }
   .contact__link--phone,
   .contact__link--mail {
@@ -318,7 +328,6 @@ img {
     padding-top: 16px;
     padding-bottom: 16px;
     color: var(--secondary-color);
-    margin-right: 83px;
   }
   .logo--lighttheme {
     color: var(--main-color);
@@ -1833,7 +1842,7 @@ img {
   .newsletter__input {
     text-align: left;
     justify-content: center;
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -1896,9 +1905,16 @@ img {
   }
   .footer {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .information {
+    margin-left: 61px;
+    margin-right: 0 auto;
+    text-align: center;
+    justify-content: center;
   }
   .information__address {
     font-style: normal;
@@ -1910,7 +1926,6 @@ img {
     color: var(--white-color);
     display: flex;
     flex-direction: column;
-    padding-bottom: 9px;
   }
   .information__address p {
     padding-bottom: 9px;
@@ -1919,9 +1934,6 @@ img {
   }
   .information__mail {
     padding-bottom: 9px;
-  }
-  .information__phone {
-    padding-bottom: 60px;
   }
   .information__mail, .information__phone {
     color: rgba(255, 255, 255, 0.6);
@@ -1935,10 +1947,25 @@ img {
   }
   .join {
     padding-top: 5px;
+    margin-left: auto;
+    margin-right: 64px;
+    text-align: center;
+    justify-content: center;
+  }
+  .join__header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
   }
   .newsletter {
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     justify-content: center;
   }
@@ -1957,7 +1984,7 @@ img {
   .newsletter__input {
     text-align: center;
     justify-content: center;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -2582,7 +2609,7 @@ img {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .socialmedia__link {
     display: flex;
@@ -2592,6 +2619,7 @@ img {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
     fill: var(--social-color);
     transition-property: background-color, fill;
     transition-duration: 250ms;
@@ -2608,24 +2636,15 @@ img {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     align-items: center;
+    margin-right: 10px;
     justify-content: center;
     fill: var(--white-color);
-    margin-right: 10px;
     transition-property: background-color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .socialmedia__link--darktheme:hover, .socialmedia__link--darktheme:focus {
     background-color: var(--secondary-color);
-  }
-  .join__header {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    padding-bottom: 20px;
   }
 }
 
@@ -2634,7 +2653,7 @@ img {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-bottom: 30px;
   }
   .socialmedia__link {
