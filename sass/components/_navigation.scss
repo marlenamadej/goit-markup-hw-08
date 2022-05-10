@@ -87,20 +87,14 @@
     list-style: none;
     display:flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    margin-left:auto;
 }
 
-.contact__item{
-    margin-left: 101px;
-    margin-top: 10px;
-}
-
-.contact__link--phone,
-.contact__link--mail {
-    margin-right:0;
-}
-
-.contact__link--icon-phone {
-    margin-right:0;
+.contact__link--icon-mail,
+.contact__link--icon-phone{
+    margin-right:8px;
 }
 
 .contact__link--phone,
