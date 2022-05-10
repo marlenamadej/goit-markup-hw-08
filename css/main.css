@@ -178,6 +178,9 @@ img {
     justify-content: left;
     margin-left: auto;
   }
+  .contact__item {
+    padding-top: 10px;
+  }
   .contact__link--icon-mail,
   .contact__link--icon-phone {
     margin-right: 8px;
@@ -756,9 +759,9 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1190px) {
   .modal {
     position: relative;
-    top: 50%;
+    top: 208px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 450px;
     min-height: 609px;
     background-color: var(--white-color);
@@ -1158,7 +1161,7 @@ img {
   }
   .menu-mobile {
     margin-top: 48px;
-    margin-left: 40px;
+    list-style: none;
   }
   .menu-mobile__item {
     font-weight: 500;
@@ -1172,8 +1175,8 @@ img {
   }
   .menu-mobile__link {
     text-decoration: none;
-    list-style: none;
     color: var(--main-color);
+    margin-left: 40px;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1183,7 +1186,7 @@ img {
   }
   .menu-contact {
     margin-bottom: 32px;
-    margin-left: 40px;
+    list-style: none;
   }
   .menu-contact__item--phone {
     font-weight: 500;
@@ -1216,8 +1219,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    text-decoration: none;
     margin-left: 40px;
+    text-decoration: none;
   }
   .menu-social__item {
     text-decoration: none;
@@ -2588,6 +2591,7 @@ img {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
     fill: var(--social-color);
     transition-property: background-color, fill;
     transition-duration: 250ms;
@@ -2665,7 +2669,7 @@ img {
     display: flex;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 30px;
   }
   .socialmedia__link {
@@ -2676,6 +2680,7 @@ img {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
     fill: var(--social-color);
     transition-property: background-color, fill;
     transition-duration: 250ms;
