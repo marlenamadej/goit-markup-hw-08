@@ -42,7 +42,7 @@
     
     .menu-mobile{
         margin-top:48px;
-        flex-grow: 1;
+        list-style: none;
     }
 
     .menu-mobile__item {
@@ -71,6 +71,7 @@
 
     .menu-contact{
         margin-bottom:32px;
+        list-style: none;
     }
 
     .menu-contact__item--phone {
@@ -110,7 +111,6 @@
         list-style: none;
         margin-left:40px;
         text-decoration: none;
-        
     }
 
     .menu-social__item{
