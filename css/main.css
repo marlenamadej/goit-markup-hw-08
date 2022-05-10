@@ -2277,6 +2277,7 @@ img {
   img {
     display: block;
     max-width: 100%;
+    height: auto;
   }
   .box {
     position: relative;
@@ -2316,6 +2317,7 @@ img {
     flex-wrap: wrap;
     list-style: none;
     justify-content: center;
+    align-items: center;
     margin-left: -30px;
     margin-bottom: -30px;
   }
@@ -2363,6 +2365,11 @@ img {
   .pic:hover .overlay,
   .pic:focus .overlay {
     transform: translatex(0);
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
   .box {
     position: relative;
