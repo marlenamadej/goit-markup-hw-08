@@ -2213,7 +2213,7 @@ img {
     font-family: var(--main-font);
     line-height: 1.555;
     letter-spacing: 0.03em;
-    padding: 49px 45px 49px 24px;
+    padding: 77px 24px 77px 24px;
   }
 }
 
@@ -2231,7 +2231,7 @@ img {
   }
   .projects__item {
     width: 354px;
-    height: 404px;
+    height: 440px;
     margin-left: 30px;
     margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
@@ -2262,7 +2262,7 @@ img {
     color: var(--gray-color);
     margin: 0;
     padding-left: 24px;
-    padding-bottom: 20px;
+    padding-bottom: 56px;
     border-bottom: 1px solid var(--border-color);
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
@@ -2273,6 +2273,10 @@ img {
   .pic:hover .overlay,
   .pic:focus .overlay {
     transform: translatex(0);
+  }
+  img {
+    display: block;
+    max-width: 100%;
   }
   .box {
     position: relative;
@@ -2299,7 +2303,7 @@ img {
     font-family: var(--main-font);
     line-height: 1.555;
     letter-spacing: 0.03em;
-    padding: 49px 45px 49px 24px;
+    padding: 49px 24px 49px 24px;
   }
 }
 
