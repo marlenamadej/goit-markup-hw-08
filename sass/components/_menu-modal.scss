@@ -40,6 +40,7 @@
     
     .menu-mobile{
         margin-top:48px;
+        flex-grow: 1;
     }
 
     .menu-mobile__item {
@@ -103,6 +104,7 @@
 
     .menu-social{
         display:flex;
+        flex-wrap:wrap;
         list-style: none;
         margin-left:40px;
         text-decoration: none;
@@ -113,6 +115,7 @@
         text-decoration: none;
         padding-right:10px;
         margin-right:10px;
+        
     }
 
     .menu-social__item:not(:last-child){
