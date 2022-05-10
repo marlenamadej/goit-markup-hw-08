@@ -174,17 +174,13 @@ img {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: auto;
   }
-  .contact__item {
-    margin-left: 101px;
-    margin-top: 10px;
-  }
-  .contact__link--phone,
-  .contact__link--mail {
-    margin-right: 0;
-  }
+  .contact__link--icon-mail,
   .contact__link--icon-phone {
-    margin-right: 0;
+    margin-right: 8px;
   }
   .contact__link--phone,
   .contact__link--mail,
@@ -593,8 +589,8 @@ img {
     position: relative;
     top: 50%;
     left: 50%;
-    width: 450px;
     transform: translate(-50%, -50%);
+    width: 450px;
     min-height: 609px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -760,9 +756,9 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1190px) {
   .modal {
     position: relative;
-    top: 50%;
+    top: 208px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
     width: 450px;
     min-height: 609px;
     background-color: var(--white-color);
@@ -1109,12 +1105,29 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu-page {
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu-modal {
     position: fixed;
-    top: 0%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
     width: 480px;
-    height: 796px;
+    min-height: 796px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
