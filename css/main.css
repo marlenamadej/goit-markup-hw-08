@@ -56,6 +56,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /*podłączyć te klasy*/
@@ -370,7 +372,7 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header_mobile.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
+    background-position: center top;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -383,7 +385,7 @@ img {
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 100%;
     color: var(--white-color);
     margin-bottom: 0;
     margin-top: 0;
@@ -593,7 +595,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    width: 100%;
     min-height: 609px;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -649,7 +651,7 @@ img {
     margin-top: 4px;
   }
   .modalform__input {
-    width: 370px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -674,7 +676,7 @@ img {
   }
   .modalform__textarea {
     outline: none;
-    width: 370px;
+    width: 100%;
     height: 120px;
     padding: 12px 16px;
     margin-top: 4px;
@@ -694,7 +696,7 @@ img {
     margin-bottom: 30px;
     margin-left: 40px;
     align-items: center;
-    width: 450px;
+    width: 100%;
     height: 14px;
   }
   .policy__checkbox {
@@ -743,9 +745,9 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border-style: none;
-    margin-right: 125px;
+    margin-right: auto;
     margin-bottom: 40px;
-    margin-left: 125px;
+    margin-left: auto;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1129,8 +1131,8 @@ img {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 480px;
-    min-height: 796px;
+    min-width: 100%;
+    height: auto;
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1244,40 +1246,44 @@ img {
     padding-bottom: 60px;
   }
   .features {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     list-style: none;
     padding-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .features__item {
-    width: 450px;
+    width: 100%;
     height: 120px;
     background-color: var(--team-background-color);
     border-radius: 4px;
     align-items: center;
     justify-content: center;
     margin-bottom: 136px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .features__icon {
     align-items: center;
-    margin: 25px 191.54px 25px 191.54px;
+    display: block;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .features__title {
     font-weight: 700;
     line-height: 1.142;
     text-transform: uppercase;
     color: var(--main-color);
-    width: 450px;
+    width: 100%;
     font-size: 14px;
     letter-spacing: 0.03em;
-    margin-top: 30px;
+    margin-top: 55px;
     align-items: center;
     justify-content: center;
-    margin-left: 175px;
-    margin-right: 175px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .features__description {
     line-height: 1.714;
@@ -1288,7 +1294,7 @@ img {
     font-size: 14px;
     letter-spacing: 0.03em;
     font-weight: 400;
-    width: 450px;
+    width: 100%;
     align-items: center;
     justify-content: center;
   }
@@ -1492,8 +1498,8 @@ img {
     justify-content: center;
     margin-bottom: 30px;
     padding-bottom: 24px;
-    width: 450px;
-    height: 622px;
+    width: 100%;
+    height: auto;
   }
   .team__name {
     font-size: 16px;
@@ -1859,7 +1865,7 @@ img {
   .newsletter__input {
     text-align: left;
     justify-content: center;
-    width: 450px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -2188,8 +2194,8 @@ img {
     justify-content: left;
   }
   .projects__item {
-    width: 450px;
-    height: 404px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 30px;
     transition: box-shadow, transform;
     transition-duration: 250ms;
@@ -2255,7 +2261,8 @@ img {
     font-family: var(--main-font);
     line-height: 1.555;
     letter-spacing: 0.03em;
-    padding: 77px 24px 77px 24px;
+    display: flex;
+    align-content: flex-end;
   }
 }
 
