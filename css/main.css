@@ -2253,6 +2253,7 @@ img {
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 77px 24px 77px 24px;
   }
   .overlay > p {
     color: var(--white-color);
@@ -2261,8 +2262,6 @@ img {
     font-family: var(--main-font);
     line-height: 1.555;
     letter-spacing: 0.03em;
-    display: flex;
-    align-content: flex-end;
   }
 }
 
