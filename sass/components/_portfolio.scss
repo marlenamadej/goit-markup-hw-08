@@ -8,8 +8,8 @@
         justify-content: left;
     
         &__item {
-            width:450px;
-            height:404px;
+            max-width:100%;
+            height:auto;
             margin-bottom: 30px;
             transition: box-shadow, transform;
             transition-duration: 250ms;
@@ -85,7 +85,9 @@
             font-family: var(--main-font);
             line-height: 1.555;
             letter-spacing: 0.03em;
-            padding: 77px 24px 77px 24px;
+            display: flex;
+            align-content: flex-end;
+            
         }
     }
 }
